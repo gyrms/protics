@@ -42,8 +42,10 @@ public class Employee {
 
     @Override
     public String toString() {
-        return "Employee{id=" + id + ", name='" + name + "', department='" + department
-                + "'}";
+        // 🔥 버그 수정: null 체크 추가 (NullPointerException 방지)
+        String safeName = (name != null) ? name : "Unknown";
+        String safeDept = (department != null) ? department : "Unknown";
+        return "Employee{id=" + id + ", name='" + safeName + "', department='" + safeDept + "'}";
     }
 
 }
