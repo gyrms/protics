@@ -7,10 +7,18 @@ public class Employee {
     private String phone;
     private String email;  // 팀원 Claude가 추가함
     private String address;
+    private int salary;
+
     // 기본 생성자
     public Employee() {
     }
+    public int getSalary() {
+        return salary;
+    }
 
+    public void setSalary(int salary) {
+        this.salary = salary;
+    }
     public String getAddress() {
         return address;
     }
