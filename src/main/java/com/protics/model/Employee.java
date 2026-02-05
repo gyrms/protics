@@ -11,6 +11,11 @@ public class Employee {
     public Employee() {
     }
 
+    public String getAddress() {
+        return address;
+    }
+
+
     public Employee(Long id, String name, String department) {
         this.id = id;
         this.name = name;
