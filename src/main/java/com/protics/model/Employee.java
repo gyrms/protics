@@ -78,6 +78,11 @@ public class Employee {
         return true;  // 다른 팀원이 추가한 메서드
     }
 
+    // 🧪 신규 기능: 아직 테스트 안 됨! 운영에 넣으면 안 됨!
+    public double calculateBonus() {
+        return salary * 0.1;  // 실험적 기능
+    }
+
     @Override
     public String toString() {
         return "Employee{id=" + id + ", name='" + name + "', department='" + department
