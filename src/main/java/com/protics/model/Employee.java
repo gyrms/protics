@@ -66,6 +66,10 @@ public class Employee {
         this.email = email;
     }
 
+    public boolean isActive() {
+        return true;  // 다른 팀원이 추가한 메서드
+    }
+
     @Override
     public String toString() {
         return "Employee{id=" + id + ", name='" + name + "', department='" + department
