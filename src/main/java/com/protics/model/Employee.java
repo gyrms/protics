@@ -4,6 +4,7 @@ public class Employee {
     private Long id;
     private String name;
     private String department;
+    private String phone;
     private String email;  // 팀원 Claude가 추가함
 
     // 기본 생성자
@@ -41,6 +42,13 @@ public class Employee {
         this.department = department;
     }
 
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
     public String getEmail() {
         return email;
     }
