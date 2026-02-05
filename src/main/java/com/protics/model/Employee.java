@@ -9,6 +9,12 @@ public class Employee {
     public Employee() {
     }
 
+    public Employee(Long id, String name, String department) {
+        this.id = id;
+        this.name = name;
+        this.department = department;
+    }
+
     // Getter, Setter
     public Long getId() {
         return id;
@@ -33,4 +39,11 @@ public class Employee {
     public void setDepartment(String department) {
         this.department = department;
     }
+
+    @Override
+    public String toString() {
+        return "Employee{id=" + id + ", name='" + name + "', department='" + department
+                + "'}";
+    }
+
 }
