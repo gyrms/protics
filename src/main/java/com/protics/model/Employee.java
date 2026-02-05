@@ -6,7 +6,7 @@ public class Employee {
     private String department;
     private String phone;
     private String email;  // 팀원 Claude가 추가함
-
+    private String address;
     // 기본 생성자
     public Employee() {
     }
