@@ -4,7 +4,7 @@ public class Employee {
     private Long id;
     private String name;
     private String department;
-
+    private String phone;
     // 기본 생성자
     public Employee() {
     }
@@ -40,6 +40,13 @@ public class Employee {
         this.department = department;
     }
 
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
     @Override
     public String toString() {
         return "Employee{id=" + id + ", name='" + name + "', department='" + department
