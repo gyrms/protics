@@ -12,4 +12,10 @@ public class StringUtil {
         if (str == null) return null;
         return new StringBuilder(str).reverse().toString();
     }
+
+    // 메서드 C: 대문자 변환
+    public static String toUpperCase(String str) {
+        if (str == null) return null;
+        return str.toUpperCase();
+    }
 }
