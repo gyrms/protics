@@ -16,6 +16,10 @@ public class Employee {
     }
 
 
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
     public Employee(Long id, String name, String department) {
         this.id = id;
         this.name = name;
